@@ -27,7 +27,7 @@ ul{
 	list-style: none;
 }
 .background{
-	background-image: url('../images/header.jpg');
+	background-image: url('../images/header.webp');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -109,7 +109,7 @@ h1{
   right: 60px;
   width: 140px;
   height: 40px;
-  background-image: url("../images/propertymin.png");
+  background-image: url("../images/propertymin.webp");
   top: 50%;
   transform: translateY(-50%);
 }
