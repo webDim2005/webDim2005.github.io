@@ -1,0 +1,795 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body{
+	background-color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Gilroy', sans-serif;
+	color: #fff;
+	line-height: 22px;
+}
+body.active{
+	overflow: hidden;
+}
+@font-face{
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+	     url('../fonts/Gilroy-Light.woff') format('woff');
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+}
+@font-face{
+	font-family: 'AnnonceW01-Regular';
+	src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+	     url('../fonts/Gilroy-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face{
+	font-family: 'AnnonceW01-Regular';
+	src: url('../fonts/AnnonceW01-Regular.woff2') format('woff2'),
+	     url('../fonts/AnnonceW01-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+}
+.container {
+	max-width: 1280px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.container-illustration{
+	position: relative;
+	min-height: 900px;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+button{
+	border: none;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+.header{
+	position: relative;
+}
+.header__menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 36px;
+	margin-bottom: 90px;
+}
+.header__menu-box{
+	display: flex;
+	align-items: center;
+}
+.burger{
+	width: 21px;
+	height: 7px;
+	cursor: pointer;
+	position: relative;
+	margin-right: 20px;
+}
+.burger-line{
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all 400ms ease;
+}
+.burger-line--first{
+	top: 0;
+	transform: translateY(50%);
+}
+.burger-line--second{
+	bottom: 0;
+}
+.burger.active .burger-line--first{
+  transform: rotate(45deg);
+  top: auto;
+}
+.burger.active .burger-line--second{
+	bottom: auto;
+	transform: rotate(-45deg);
+}
+.logo, .burger, .phone{
+	z-index: 8;
+}
+.menu{
+	background: #000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: fixed;
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: all 450ms ease;
+	z-index: 7;
+}
+.menu.active{
+	transform: translateY(0px);
+}
+.container-menu{
+	max-width: 1280px;
+	padding: 0 10px;
+	margin: 0 auto;
+	position: relative;
+}
+.menu__list{
+	text-align: center;
+	transform: translateY(150%);
+	top: 50%;
+}
+.menu__list-item{
+	margin-bottom: 24px;
+}
+.menu__link{
+	font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+.menu__link::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0%;
+	background-color: #88A906;
+	z-index: -1;
+	transition: all 250ms linear;
+	bottom: 0;
+	left: 0;
+}
+.menu__link:hover::after{
+	height: 40%;
+}
+.header__content{
+	display: flex;
+	justify-content: space-between;
+}
+.header__content-left{
+	max-width: 772px;
+	margin-top: 50px;
+}
+h1{
+	font-family: "AnnonceW01-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 173px;
+  letter-spacing: -0.06em;
+  position: relative;
+}
+.header__subtitle{
+	font-size: 14px;
+  line-height: 17px;
+}
+h1::after{
+	content: "";
+	width: 461px;
+	height: 280px;
+	background-image: url("../images/title-back.svg");
+	position: absolute;
+	left: 121px;
+	z-index: -1;
+	top: -24px;
+}
+.container-illustration::after{
+	content: "";
+	position: absolute;
+	width: 550px;
+	height: 426px;
+	left: 16%;
+	background-image: url("../images/clothe.webp");
+	bottom: -5px;
+}
+.header__content-link{
+	position: relative;
+	font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 85%;
+  display: inline-block;
+  z-index: 2;
+  text-transform: uppercase;
+}
+.header__content-link::before{
+	content: "";
+	position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #C4C4C4;
+  left: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: -1;
+  transition: background-color 400ms ease-in-out;
+}
+.header__content-link:hover::before{
+	background-color: #88A906;
+}
+.goods{
+	background-color: #0A0A0A;
+}
+.goods__items{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	width: 100%;
+}
+.goods__item{
+	text-align: center;
+	cursor: pointer;
+	margin: 2%;
+	flex-basis: 20%;
+	padding-bottom: 4%;
+}
+.goods__item-btn{
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	transition: all 400ms ease;
+}
+h4{
+	font-family: AnnonceW01-Regular;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #88A906;
+  margin-bottom: 8px;
+}
+.goods__item-img{
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.goods__item-link{
+	width: 108px;
+	height: 115px;
+	background-image: url("../images/clothe-link.svg");
+	display: block;
+	margin: 0 auto;
+}
+.goods__item-btn::after{
+	opacity: 0;
+	content: "";
+	position: absolute;
+	width: 255px;
+	height: 351px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../images/goods-hover.svg");
+	z-index: -1;
+	transition: all 400ms ease;
+}
+.goods__item-btn:hover::after, .goods__item-btn--1:hover::before,
+.goods__item-btn--2:hover::before, .goods__item-btn--3:hover::before,
+.goods__item-btn--4:hover::before{
+	opacity: 1;
+}
+.goods__item-btn--1::before{
+	opacity: 0;
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 162px;
+  z-index: -1;
+  top: -90px;
+  left: -68px;
+  background-image: url("../images/goods-inscription-1.svg");
+  transition: all 400ms ease;
+}
+.goods__item-btn--2::before{
+	opacity: 0;
+  content: "";
+  position: absolute;
+  width: 302px;
+  height: 200px;
+  z-index: -1;
+  top: -116px;
+  left: -41px;
+  background-image: url("../images/goods-inscription-2.svg");
+  transition: all 400ms ease;
+}
+.goods__item-btn--3::before{
+	opacity: 0;
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 204px;
+  z-index: -1;
+  top: -128px;
+  left: -19px;
+  background-image: url("../images/goods-inscription-3.svg");
+  transition: all 400ms ease;
+}
+.goods__item-btn--4::before{
+	opacity: 0;
+  content: "";
+  position: absolute;
+  width: 375px;
+  height: 230px;
+  z-index: -1;
+  top: -142px;
+  left: -14px;
+  background-image: url("../images/goods-inscription-4.svg");
+  transition: all 400ms ease;
+}
+.special-sale{
+	background-color: #fff;
+	color: #000;
+	position: relative;
+	min-height: 900px;
+}
+.special-sale__content{
+	max-width: 500px;
+}
+.special-sale__content::after{
+	content: "";
+	position: absolute;
+	width: 384px;
+	height: 480px;
+	right: 0;
+	bottom: 50px;
+	background-image: url("../images/decorate.webp")
+}
+.special-sale__inner{
+	padding-top: 180px;
+	display: flex;
+	justify-content: center;
+}
+.special-sale::before{
+	bottom: 0;
+  content: "";
+  position: absolute;
+  width: 575px;
+  height: 764px;
+  background-image: url("../images/sale.webp")
+}
+.special-sale__title{
+	color: transparent;
+  font-family: AnnonceW01-Regular;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.1em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  margin-bottom: 25px;
+}
+.special-sale__title span{
+  font-size: 96px;
+  line-height: 115px;
+  letter-spacing: -0.125em;
+  -webkit-text-stroke-width: 0;
+  -webkit-text-stroke-color: 0;
+  color: #000;
+  margin-bottom: 25px;
+}
+.special-sale__text{
+	max-width: 407px;
+	margin-bottom: 144px;
+	color: rgba(0,0,0, .7);
+	font-weight: 300;
+}
+.special-sale-link{
+	font-family: AnnonceW01-Regular;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -0.025em;
+  position: relative;
+  z-index: 2;
+  margin-left: 120px;
+}
+.special-sale-link::before{
+	content: "";
+	position: absolute;
+	width: 400px;
+	height: 290px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../images/bck-btn.svg");
+	z-index: -1;
+}
+.product__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+.product__content{
+	max-width: 600px;
+}
+.title, .title--BlackPerch, .title--Zeneration, 
+.title--WhiteWhale, .title--BulletproofVest{
+  font-family: AnnonceW01-Regular;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: -0.045em;
+  color: #88A906;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+.title--BlackPerch::after, .title--Zeneration::after, 
+.title--WhiteWhale::after, .title--BulletproofVest::after {
+	content: "";
+	position: absolute;
+  z-index: -1;
+  transform: translateY(50%);
+}
+.title--BlackPerch::after{
+	background-image: url("../images/goods-inscription-2.svg");
+	right: 30px;
+	width: 302px;
+  height: 200px;
+  top: -65%;
+  transform: rotate(21.7deg);
+}
+
+.title--Zeneration::after{
+	background-image: url("../images/product_inscription-1.svg");
+	right: 100px;
+	width: 243px;
+  height: 94px;
+  top: -55%;
+}
+.title--WhiteWhale::after{
+  background-image: url("../images/product_inscription-3.svg");
+  right: 36px;
+	width: 322px;
+  height: 96px;
+  top: -54%;
+}
+.title--BulletproofVest::after{
+	background-image: url("../images/product_inscription-4.svg");
+  right: -39px;
+	width: 391px;
+  height: 98px;
+  top: -50%;
+}
+.product__text{
+  max-width: 570px;
+  color: rgba(220, 214, 214, 0.7);
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
+.product__compound{
+	margin-bottom: 100px;
+}
+.product__compound-item{
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+}
+.product__compound-num{
+	margin-right: 50px;
+	font-weight: 600;
+  font-size: 24px;
+  line-height: 118.5%;
+  color: #DCD6D6;
+}
+.product__compound-text{
+  font-size: 24px;
+  line-height: 118.5%;
+  color: rgba(220, 214, 214, 0.7);
+}
+.product__img{
+  margin-top: 60px;
+}
+.product-btn{
+	font-family: AnnonceW01-Regular;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -0.025em;
+  position: relative;
+  z-index: 2;
+  margin-left: 120px;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+.product-btn::before{
+	content: "";
+	position: absolute;
+	width: 400px;
+	height: 170px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../images/product-btn.svg");
+	z-index: -1;
+}
+@media (max-width: 1600px){
+	.special-sale::before{
+		left: -160px;
+	}
+}
+@media (max-width: 1464px){
+	.goods__item{
+		flex-basis: 29.33%;
+	}
+}
+@media (max-width: 1240px){
+	.title--BlackPerch::after, .title--Zeneration::after, 
+  .title--WhiteWhale::after, .title--BulletproofVest::after {
+  	right: 40px;
+  }
+}
+@media (max-width: 1240px){
+	.special-sale__content::after{
+		display: none;
+	}
+	.special-sale__inner{
+		justify-content: right;
+	}
+	.special-sale__content{
+		margin-right: 8%;
+	}
+}
+@media (max-width: 1120px){
+	.header__content-right img{
+		display: none;
+	}
+	.container-illustration::after{
+		left: auto;
+		right: 0%;
+	}
+	.header__content{
+	  max-width: 772px;
+	  margin: 0 auto;
+	}
+	.special-sale::before {
+    transform: scale(0.8);
+    bottom: -8.5%;
+  }
+  .product__inner{
+  	display: block;
+  }
+  .product__content{
+  	margin: 0 auto;
+  }
+  .product__img{
+  	display: block;
+    margin: 60px auto 0;
+  }
+  .title--BlackPerch::after, .title--Zeneration::after,
+  .title--WhiteWhale::after, .title--BulletproofVest::after {
+    right: 120px;
+  }
+}
+@media (max-width: 980px){
+	.goods__item{
+		margin: 1%;
+    flex-basis: 48%;
+	}
+	.goods__item-btn--1::before, .goods__item-btn--2::before,
+	.goods__item-btn--3::before, .goods__item-btn--4::before{
+	  transform: scale(0.8);
+  }
+}
+@media (max-width: 870px){
+	.special-sale{
+		min-height: 800px;
+	}
+  .special-sale::before {
+    transform: scale(0.6);
+    bottom: -19%;
+    left: -220px;
+  }
+  .special-sale-link::before{
+	  width: 281px;
+	  height: 195px;
+	  background-image: url("../images/bck-btn-small.svg");
+  }
+  .special-sale-link{
+  	font-size: 32px;
+  	line-height: 38px;
+  	margin-left: 50px;
+  }
+  .special-sale__title span{
+  	font-size: 80px;
+  	line-height: 95px;
+  }
+  .special-sale__title{
+  	font-size: 22px;
+  	line-height: 26px;
+  }
+}
+@media (max-width: 763px){
+	.goods__item{
+    flex-basis: 100%;
+     padding-bottom: 15%;
+     margin: 0%;
+	}
+	.goods__item-btn--1::before, .goods__item-btn--2::before,
+	.goods__item-btn--3::before, .goods__item-btn--4::before{
+	  transform: scale(1);
+  }
+   .special-sale{
+   	min-height: 700px;
+   }
+  .special-sale__inner{
+  	justify-content: center;
+  }
+  .special-sale__content{
+  	margin: 0 auto;
+  	text-align: center;
+  }
+  .special-sale-link{
+  	margin-left: 0;
+  }
+  .special-sale::before {
+    transform: scale(0.3);
+    bottom: -38%;
+    left: -263px;
+  }
+  .product__img{
+  	width: 100%;
+  	margin-top: 30px;
+  }
+}
+@media (max-width: 620px){
+	.container-illustration::after{
+		background-image: url("../images/clothe--min.webp");
+		width: 378px;
+		height: 327px;
+		bottom: 0;
+	}
+	h1{
+		font-size: 100px;
+		line-height: 120px;
+	}
+	h1::after{
+		transform: scale(0.7);
+		left: 11px;
+		top: -69px;
+	}
+	h4{
+		font-size: 32px;
+		line-height: 41px;
+	}
+	.goods__item-btn{
+		width: 100%;
+	}
+  .container-illustration {
+    min-height: 700px;
+  }
+  .goods__item-btn::after, .goods__item-btn--1::before, .goods__item-btn--2::before,
+	.goods__item-btn--3::before, .goods__item-btn--4::before{
+	  display: none;
+  }
+  .special-sale::before{
+  	display: none;
+  }
+  .product__content{
+  	width: 100%;
+  }
+  .title, .title--BlackPerch, 
+  .title--Zeneration, .title--WhiteWhale, 
+  .title--BulletproofVest{
+  	font-size: 60px;
+    line-height: 71px;
+  }
+  .title--BlackPerch::after{
+  	top: -60px;
+  	transform: rotate(21.7deg) scale(0.7);
+  	left: 90px;
+  }
+  .title--Zeneration::after{
+  	top: -10px;
+  	left: 140px;
+  	transform: scale(0.7);
+  }
+  .title--WhiteWhale::after, .title--BulletproofVest::after{
+  	top: -10px;
+  	left: 50px;
+  	transform: scale(0.7);
+  }
+  .product__text{
+  	font-size: 18px;
+  	line-height: 21px;
+  }
+  .product__compound-num {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+  .product__compound-text{
+  	font-size: 18px;
+  }
+  .product-btn{
+  	font-size: 28px;
+  	line-height: 33px;
+  	margin-left: 70px;
+  }
+  .product-btn::before {
+  	width: 281px;
+  	height: 119px;
+    background-image: url("../images/product-btn-smal.svg");
+  }
+}
+@media (max-height: 480px){
+	.menu__list {
+    transform: translateY(100%);
+  }
+  .special-sale__content{
+  	width: 100%;
+  }
+}
+@media (max-width: 433px){
+	h1{
+		font-size: 84px;
+		line-height: 84px;
+	}
+	h1::after {
+    transform: scale(0.53);
+    left: -48px;
+    top: -76px;
+  }
+  .container-illustration::after{
+  	background-image: url("../images/clothe--mobile.webp");
+  	width: 323px;
+  	height: 280px;
+	}
+	.container-illustration {
+    min-height: 620px;
+  }
+  h1{
+		font-size: 80px;
+		line-height: 80px;
+	}
+	h1::after {
+    transform: scale(0.45);
+    top: -82px;
+  }
+  .special-sale__title span{
+  	font-size: 66px;
+    line-height: 79px;
+  }
+  .title, .title--BlackPerch, 
+  .title--Zeneration, .title--WhiteWhale, 
+  .title--BulletproofVest {
+    font-size: 48px;
+    line-height: 57px;
+ }
+  .title--BlackPerch::after{
+    top: -64px;
+    left: 50px;
+    transform: rotate(21.7deg) scale(0.5);
+  }
+  .title--Zeneration::after{
+  	top: -16px;
+    left: 100px;
+    transform: scale(0.5);
+  }
+  .title--WhiteWhale::after, .title--BulletproofVest::after,
+  .title--BulletproofVest::after{
+    top: -16px;
+    left: 0px;
+    transform: scale(0.5);
+  }
+}
