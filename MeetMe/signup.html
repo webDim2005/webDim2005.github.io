@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Meet me</title>
+	<link rel="shortcut icon" href="images/iconlogo.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=PT+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<header class="header__authorization">
+		<div class="container">
+			<div class="header__menu">
+				<a class="logo" href="index.html"><img src="images/logo.svg" alt="логотип"></a>
+				<div class="burger">
+					<span class="burger-line burger-line--first"></span>
+					<span class="burger-line burger-line--second"></span>
+					<span class="burger-line burger-line--third"></span>
+					<span class="burger-line burger-line--fourth"></span>
+				</div>
+			</div>
+			<nav class="menu">
+			  <div class="container-menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a class="menu__link" href="https://webdim2005.github.io/MeetMe/index.html#project">О проекте</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__link" href="https://webdim2005.github.io/MeetMe/index.html#map">Как устроено Meet me?</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__link" href="https://webdim2005.github.io/MeetMe/index.html#new">Новости</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__link" href="https://webdim2005.github.io/MeetMe/index.html#contacts">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section class="form__container">
+		<div class="form__container-box">
+			<div class="form__item">
+				<form class="form" method="post" action="signup.html">
+		      <div class="form__inner">
+						<h2 class="form__title">Регистрация аккаунта</h2>
+						<p class="form__descr">Пару кликов и вы уже на площадке!</p>
+		        <div class="form__center">
+							<div class="form__item form__item-name">
+							  <input class="input" placeholder="Полное имя" type="text" id="user_name">
+							</div>
+							<div class="form__item form__item-email">
+							  <input class="input" placeholder="Email" type="email" id="user_email">
+							</div>
+							<div class="form__item form__item-password">
+							  <input class="input" placeholder="Пароль" type="password" id="user_password">
+							</div>
+							<div class="form__offer">
+							  <input id="offer" type="checkbox">
+							  <label class="form__offer-text" for="offer">
+							    Я соглашаюсь с политикой обработки данных и <a class="offer__link" href="#">договором оферты</a>
+							  </label>
+							</div>
+							<button class="form__btn" type="submit">Регистрация</button>
+		        </div>
+		        <div class="form__nav">
+		        	<p class="form__nav-text">Уже есть аккаунт?</p>
+		        	<a class="form__link-signin" href="signin.html">Войти</a>
+		        </div>
+			    </div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__left">
+					<a class="logo" href="index.html"><img src="images/logo-footer.svg" alt="лого"></a>
+					<div class="footer__social">
+						<a class="footer__social-link" href="#"><img src="images/vk.svg" alt="ВКонтакте"></a>
+						<a class="footer__social-link" href="#"><img src="images/tg.svg" alt="Telegram"></a>
+						<a class="footer__social-link" href="#"><img src="images/fc.svg" alt="Facebook"></a>
+						<a class="footer__social-link" href="#"><img src="images/inst.svg" alt="Instagram"></a>
+						<a class="footer__social-link" href="#"><img src="images/yt.svg" alt="YouTube"></a>
+					</div>
+					<div class="footer__copyright">
+						<p>2021 © Meet me</p>
+					</div>
+				</div>
+				<div class="footer__account">
+					<h3 class="footer__title">Аккаунт</h3>
+					<div class="footer__items">
+						<a href="signin.html" class="footer__links">Войти</a>
+						<a href="signup.html" class="footer__links">Создать аккаунт</a>
+						<a href="#" class="footer__links">Партнерка</a>
+					</div>
+				</div>
+				<div class="footer__contacts">
+					<h3 class="footer__title">Контакты</h3>
+					<div class="footer__items">
+						<a href="mailto:meetme@gmail.com" class="footer__links">meetme@gmail.com</a>
+						<a href="#" class="footer__links">@meetme_help</a>
+						<a href="tel:+7XXXXXXXXXX" class="footer__links">+7 (XXX) XXX-XX-XX</a>
+					</div>
+				</div>
+				<a href="signup.html" class="footer__btn">Найти клуб</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/wow.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
