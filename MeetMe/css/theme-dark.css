@@ -1,0 +1,38 @@
+body{
+	background-color: #000;
+	color: #fff;
+  transition: all 300ms linear;
+}
+a{
+	color: #fff;
+}
+.menu{
+	background: #000;
+}
+@keyframes blink-caret {
+  from{
+  	transition-delay: 1.5s;
+  	border-color: transparent;
+  }
+  50%{
+  	border-color: #fff; 
+  }
+  to{
+    border-color: transparent;
+  }
+}
+.footer{
+	background-color: #4F000E;
+}
+.change-theme[data-theme="light"]{
+  display: block;
+}
+.change-theme[data-theme="dark"]{
+  display: none;
+}
+.logo{
+  display: block;
+}
+.logo-light{
+  display: none;
+}

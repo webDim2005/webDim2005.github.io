@@ -1,0 +1,56 @@
+body{
+	background-color: #fff;
+	color: #000;
+	transition: all 300ms linear;
+}
+a{
+	color: #fff;
+}
+.menu{
+	background: #fff;
+}
+.menu__link{
+	color: #000;
+}
+.burger-line{
+	background-color: #000;
+}
+@keyframes blink-caret {
+  from{
+  	transition-delay: 1.5s;
+  	border-color: transparent;
+  }
+  50%{
+  	border-color: #000; 
+  }
+  to{
+    border-color: transparent;
+  }
+}
+.news__slider__box{
+	background-color: rgba(0, 0, 0, .5);
+}
+.slider__arrow path{
+	fill: #000;
+}
+.footer{
+	background-color: #6B0013;
+}
+.footer__title, .footer__copyright, h5{
+	color: #fff;
+}
+.change-theme[data-theme="light"]{
+	display: none;
+}
+.change-theme[data-theme="dark"]{
+	display: block;
+}
+.logo{
+	display: none;
+}
+.logo-light{
+	display: block;
+}
+.form__title{
+	color: #fff;
+}
