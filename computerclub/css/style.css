@@ -614,7 +614,7 @@ h1{
 	.program__box::before {
 		display: none;
 	}
-	.course__btn{
+	.course__btn-top{
 		margin-bottom: 20px;
 		margin-right: 0;
 	}
