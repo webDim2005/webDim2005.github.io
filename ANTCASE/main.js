@@ -25,24 +25,24 @@ btn.onclick = function(){
 	  getNumber(805);
   } 
   setTimeout(function(){
-  	id[a] == '<img src="images/niger.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Lasius niger</h2><img class="popup__img" src="images/Lasius-niger.jpg" alt="">':
-	  id[a] == '<img src="images/muticus.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Messor muticus</h2><img class="popup__img" src="images/Messor-structor.jpg" alt="">':
-	  id[a] == '<img src="images/rubra.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Myrmica rubra</h2><img class="popup__img" src="images/Manica-rubida.jpg" alt="">':
-	  id[a] == '<img src="images/flavus.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Lasius flavus</h2><img class="popup__img" src="images/Lasius-flavus.jpg" alt="">':
-	  id[a] == '<img src="images/fusca.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Formica fusca</h2><img class="popup__img" src="images/Formica-fusca.jpg" alt="">':
-	  id[a] == '<img src="images/caespitum.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Tetramorium caespitum</h2><img class="popup__img" src="images/Tetramorium-caesp.jpg" alt="">':
-	  id[a] == '<img src="images/nico.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Camponotus nicobarensis</h2><img class="popup__img" src="images/nicobar.jpg" alt="">':
-    id[a] == '<img src="images/brunea.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Myrmicaria brunea</h2><img class="popup__img" src="images/Myrmicaria-brunea.jpg" alt="">':
-    id[a] == '<img src="images/venator.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Harpegnathos venator</h2><img class="popup__img" src="images/Harpegnathos-venator.jpg" alt="">':
-    id[a] == '<img src="images/leo.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Colobopsis leonardi</h2><img class="popup__img" src="images/Colobopsis-leonardi.jpg" alt="">':
-    id[a] == '<img src="images/metal.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Rhytidoponera metallica</h2><img class="popup__img" src="images/R.-metallica.jpg" alt="">':
-    id[a] == '<img src="images/oecop.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Oecophylla smaragdina</h2><img class="popup__img" src="images/Oecophylla-smaragdina.jpg" alt="">':
-    id[a] == '<img src="images/barba.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Pogonomyrmex barbatus</h2><img class="popup__img" src="images/Pogonomyrmex-barbatus.jpg" alt="">':
-    id[a] == '<img src="images/forfi.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Myrmecia fotficata</h2><img class="popup__img" src="images/Myrmecia-fotficata.jpg" alt="">':
-    id[a] == '<img src="images/gigades.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Gigantiops destructor</h2><img class="popup__img" src="images/G-destructor.jpg" alt="">':
-    id[a] == '<img src="images/rufipes.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Pseudoneoponera rufipes</h2><img class="popup__img" src="images/Pseudoneoponera-rufipes.jpg" alt="">':
-    id[a] == '<img src="images/barb.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Messor barbarus</h2><img class="popup__img" src="images/Messor-barbarus.jpg" alt="">':
-    title[0].innerHTML += '<h2 class="popup__title">Вы поймали Dinomyrmex gigas</h2><img class="popup__img" src="images/dinogig.png" alt="">';
+  	id[a] == '<img src="images/niger.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Lasius niger</h2><img class="popup__img" src="images/Lasius-niger.jpg" alt="">':
+	  id[a] == '<img src="images/muticus.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Messor muticus</h2><img class="popup__img" src="images/Messor-structor.jpg" alt="">':
+	  id[a] == '<img src="images/rubra.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Myrmica rubra</h2><img class="popup__img" src="images/Manica-rubida.jpg" alt="">':
+	  id[a] == '<img src="images/flavus.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Lasius flavus</h2><img class="popup__img" src="images/Lasius-flavus.jpg" alt="">':
+	  id[a] == '<img src="images/fusca.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Formica fusca</h2><img class="popup__img" src="images/Formica-fusca.jpg" alt="">':
+	  id[a] == '<img src="images/caespitum.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Tetramorium caespitum</h2><img class="popup__img" src="images/Tetramorium-caesp.jpg" alt="">':
+	  id[a] == '<img src="images/nico.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Camponotus nicobarensis</h2><img class="popup__img" src="images/nicobar.jpg" alt="">':
+    id[a] == '<img src="images/brunea.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Myrmicaria brunea</h2><img class="popup__img" src="images/Myrmicaria-brunea.jpg" alt="">':
+    id[a] == '<img src="images/venator.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Harpegnathos venator</h2><img class="popup__img" src="images/Harpegnathos-venator.jpg" alt="">':
+    id[a] == '<img src="images/leo.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Colobopsis leonardi</h2><img class="popup__img" src="images/Colobopsis-leonardi.jpg" alt="">':
+    id[a] == '<img src="images/metal.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Rhytidoponera metallica</h2><img class="popup__img" src="images/R.-metallica.jpg" alt="">':
+    id[a] == '<img src="images/oecop.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Oecophylla smaragdina</h2><img class="popup__img" src="images/Oecophylla-smaragdina.jpg" alt="">':
+    id[a] == '<img src="images/barba.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Pogonomyrmex barbatus</h2><img class="popup__img" src="images/Pogonomyrmex-barbatus.jpg" alt="">':
+    id[a] == '<img src="images/forfi.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Myrmecia fotficata</h2><img class="popup__img" src="images/Myrmecia-fotficata.jpg" alt="">':
+    id[a] == '<img src="images/gigades.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Gigantiops destructor</h2><img class="popup__img" src="images/G-destructor.jpg" alt="">':
+    id[a] == '<img src="images/rufipes.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Pseudoneoponera rufipes</h2><img class="popup__img" src="images/Pseudoneoponera-rufipes.jpg" alt="">':
+    id[a] == '<img src="images/barb.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Messor barbarus</h2><img class="popup__img" src="images/Messor-barbarus.jpg" alt="">':
+    title.innerHTML += '<h2 class="popup__title">Вы поймали Dinomyrmex gigas</h2><img class="popup__img" src="images/dinogig.png" alt="">';
     popupOpen();
   }, 7580);
 }
