@@ -29,7 +29,7 @@ btn.onclick = function(){
 	  id[a] == '<img src="images/muticus.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Messor muticus</h2><img class="popup__img" src="images/Messor-structor.jpg" alt="">':
 	  id[a] == '<img src="images/rubra.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Myrmica rubra</h2><img class="popup__img" src="images/Manica-rubida.jpg" alt="">':
 	  id[a] == '<img src="images/flavus.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Lasius flavus</h2><img class="popup__img" src="images/Lasius-flavus.jpg" alt="">':
-	  id[a] == '<img src="images/fusca.png" alt="">' ? title.innerHTML += '<h2 class="popup__title">Вы поймали Formica fusca</h2><img class="popup__img" src="images/Formica-fusca.jpg" alt="">':
+	  id[a] == '<img src="images/fusca.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Formica fusca</h2><img class="popup__img" src="images/Formica-fusca.jpg" alt="">':
 	  id[a] == '<img src="images/caespitum.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Tetramorium caespitum</h2><img class="popup__img" src="images/Tetramorium-caesp.jpg" alt="">':
 	  id[a] == '<img src="images/nico.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Camponotus nicobarensis</h2><img class="popup__img" src="images/nicobar.jpg" alt="">':
     id[a] == '<img src="images/brunea.png" alt="">' ? title[0].innerHTML += '<h2 class="popup__title">Вы поймали Myrmicaria brunea</h2><img class="popup__img" src="images/Myrmicaria-brunea.jpg" alt="">':
